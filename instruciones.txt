@@ -1,0 +1,8 @@
+#paquetes utilizados
+#fastapi = framework para construir las api rest
+#uvicorn =servidor asgi que ejecutala app fast api
+#Sqlalchemy = orm para conectar la base de datos por medio de clases
+#pymysql =driver de conexion para Sqlalchemy con mysql 
+#pydantic = validar serializar los datos (schemas de entada y salida)
+
+pip list
