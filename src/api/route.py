@@ -52,7 +52,7 @@ from src.api.schema import (
     NovedadUpdate,
 )
 
-router = APIRouter(prefix="/api/v1")
+router = APIRouter()
 
 # Roles
 @router.get("/roles", response_model=List[RolResponse], tags=["Roles"])
