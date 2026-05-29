@@ -57,8 +57,8 @@ router = APIRouter(prefix="/api/v1")
 # Roles
 @router.get("/roles", response_model=List[RolResponse], tags=["Roles"])
 def listar_roles(db: Session = Depends(get_db)):
-    service = RolService(db)
-    return service.listar()
+    
+    return RolService(db).listar()
 
 @router.get("/roles/{id_rol}", response_model=RolResponse, tags=["Roles"])
 def obtener_rol(id_rol: int, db: Session = Depends(get_db)):
