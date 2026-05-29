@@ -19,7 +19,10 @@ app.add_middleware(
 #vamos a registrar las rutas definidas en el router, esto hace que las rutas estén disponibles para ser accedidas a través de la API
 app.include_router(router)
 
+
+
+
 #endpoint de salud, para verificar que la API está funcionando correctamente
-@app.get("/health", tags=["Health"])
+@app.get("/", tags=["Health salud"])
 def health_check():
     return {"status": "ok", "api": "IUtede backend", "version": "1.0.0"}
