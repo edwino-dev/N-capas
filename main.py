@@ -13,7 +13,6 @@ app = FastAPI(title="IUtede - gestion de recursos TICs",
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], #acepta solicitudes de cualquier origen, en producción se recomienda especificar los dominios permitidos
-    allow_credentials=True, #permite el uso de cookies y credenciales en las solicitudes
     allow_methods=["*"], #permite todos los métodos HTTP (GET, POST, PUT, DELETE, etc.)
     allow_headers=["*"], #permite todos los encabezados HTTP, en producción se recomienda especificar los encabezados permitidos
 )
